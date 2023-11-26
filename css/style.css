@@ -8,6 +8,8 @@
     --text-accent: #B0907A;
     --background-body:#E1D4C9;
     --text-light: #E1D4C9;
+    --border-dark: #665F55;
+    --border-light: #C1B6AD;
 }
 
 
@@ -30,7 +32,6 @@ header a{
 .container{
     max-width: var(--container-width);
     padding: var(--container-padding);
-    background-color: red;
     margin: 20px auto;
 }
 .header-menu{
@@ -106,14 +107,14 @@ header a{
 }
 
 h1{
-    font-size: 72px !important;
-    font-style: italic;
-    font-weight: 600 !important;
+    font-size: 72px ;
+    font-weight: 600;
     color: var(--text-light);
     margin-bottom: 40px;
 }
 
-h1 span{
+h1 span,
+h2 span{
     color:var(--text-accent);
     font-style: italic;
 }
@@ -143,4 +144,85 @@ h1 span{
 }
 .header-offer a img:hover{
     display: flex;
+}
+
+.favourite{
+    max-height: 799px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+h2 {
+    color: var(--text-dark);
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.slider{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 684px;
+    column-gap: 40px;
+}
+
+.slider-card{
+    display: flex;
+    /* min-width: 480px;
+    max-width: 1162px; */
+    width: 480px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.arrow{
+    border-radius: 100px;
+    border: 1px solid var(--text-dark);
+    width: 60px;
+    height: 60px;
+    position: relative;
+}
+.arrow img {
+    position: absolute;
+    top: 18px;
+    left: 18px
+}
+
+.slider-card img{
+    max-width: 480px;
+    max-height: 480px;
+    margin-bottom: 20px;
+}
+
+.coffee-name{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.coffee-description{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+.coffee-price{
+    font-size: 24px;
+    font-weight: 600;  
+}
+
+.pagination{
+    display: flex;
+    align-items: flex-start;
+    column-gap: 12px;
+    height: 40px;
+    justify-content: center;
+}
+.control{
+    width: 40px;
+    height: 4px;
+    border-radius: 100px;
+    background: var(--border-light);
+}
+.control.active{
+    background: var(--border-dark);
 }
