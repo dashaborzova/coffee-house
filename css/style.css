@@ -7,7 +7,9 @@
     --text-dark: #403F3D;
     --text-accent: #B0907A;
     --background-body:#E1D4C9;
+    --text-light: #E1D4C9;
 }
+
 
 body{
     /* font-family: 'Cormorant', serif; */
@@ -86,4 +88,59 @@ header a{
     width: 100%;
     background-color: var(--text-dark);
     height: 2px;
+}
+.header-hero{
+    background-image: url(/img/hero.jpg);
+    max-width: 1360px;
+    padding: 100px;
+    border-radius: 40px;
+    margin-bottom: 100px;
+}
+.header-offer{
+    max-width: 530px;
+    max-height: 444px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+h1{
+    font-size: 72px !important;
+    font-style: italic;
+    font-weight: 600 !important;
+    color: var(--text-light);
+    margin-bottom: 40px;
+}
+
+h1 span{
+    color:var(--text-accent);
+    font-style: italic;
+}
+.header-text{
+    margin-bottom: 40px;
+    color: var(--text-light, #E1D4C9);
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+.btn{
+    display: inline-block;
+    max-width: 200px;
+    padding: 20px 78px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background-color: var(--background-body);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-dark);
+    column-gap: 8px;
+}
+
+.header-offer a img{
+    display: none;
+}
+.header-offer a img:hover{
+    display: flex;
 }
