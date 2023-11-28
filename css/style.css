@@ -18,7 +18,7 @@ body{
     background-color: var(--background-body, #E1D4C9);
 }
 .none{
-    display: none !important;
+    display: none;
 }
 header{
     margin: 0 auto 100px auto;
@@ -99,9 +99,6 @@ header a{
     column-gap: 8px;  
     align-items: center; 
     
-}
-.coffee-menu img{
-    display: none;
 }
 .coffee-menu a{
     position: relative;
@@ -350,6 +347,13 @@ h2 {
     background-color: var(--border-dark);
     color: var(--text-light);
 }
+.none:hover{
+    display: block;
+
+}
+.visible:hover{
+    display: none;
+}
 .app-top{
     font-size: 10px;
 }
@@ -362,4 +366,91 @@ h2 {
     background: var(--border-dark);
     height: 450px;
     max-width: 1360px;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 100px;
+}
+.offer-text h2{
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 75px;
+    margin-bottom: 40px;
+}
+.offer-social{
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+.social-icon{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    border: 1px solid var(--border-light);
+}
+.social-icon:hover{
+    background-color:  var(--border-light);;
+
+}
+
+.offer, .contacts{
+    max-width: 530px;
+} 
+.contacts{
+    width: 530px;
+} 
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.contacts-title{
+    margin-bottom: 40px;
+}
+.contacts p{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    color: var(--text-light);
+    column-gap: 8px;
+    
+}
+.address{
+    display: flex;
+    column-gap: 8px;
+    margin-bottom: 16px;
+    align-items: center;
+}
+.address p{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px
+}
+a[href^="tel:"] {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-decoration: none;
+    color: var(--text-light);
+    column-gap: 8px;
+}
+.telephone{
+    display: flex;
+    column-gap: 8px;
+    margin-bottom: 16px;
+}
+.hours{
+    display: flex;
+    column-gap: 8px;
+    color: var(--text-light);
+}
+.hours p{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px
 }
