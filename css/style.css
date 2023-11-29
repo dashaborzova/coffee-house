@@ -32,6 +32,10 @@ header a{
     margin: 20px auto;
     display: block;
 }
+html {
+    scroll-behavior: smooth;
+  }
+
 .header-menu{
     display: flex;
     justify-content: space-between;
