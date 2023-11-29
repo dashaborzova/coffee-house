@@ -21,8 +21,7 @@ body{
     display: none;
 }
 header{
-    margin: 0 auto 100px auto;
-    height: 724px;
+    margin: 0 auto;
 }
 header a{
     color: var(--text-dark);
@@ -119,7 +118,6 @@ header a{
     max-width: 1360px;
     padding: 100px;
     border-radius: 40px;
-    margin-bottom: 100px;
 }
 .header-offer{
     max-width: 530px;
@@ -178,6 +176,7 @@ h2 span{
     align-items: center;
     flex-direction: column;
     margin-bottom: 40px;
+    margin-top: 100px;
 }
 h2 {
     color: var(--text-dark);
@@ -456,6 +455,12 @@ a[href^="tel:"] {
 }
 .menu{
     max-height: 728px;
+    display: flex;
+    max-width: 1360px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
 }
 .menu-offer h2{
     color: var(--text-dark);
@@ -468,3 +473,63 @@ a[href^="tel:"] {
     flex-direction: column;
     align-items: center;
 }
+
+.menu-title{
+    text-align: center;
+    padding: 0 280px;
+    margin-bottom: 40px;
+}
+.menu-tabs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 16px;
+}
+
+.coffee-tab,
+.tea-tab,
+.dessert-tab{
+    padding: 8px 16px 8px 8px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid var(--border-light);
+  
+}
+.coffee-tab:hover,
+.tea-tab:hover,
+.dessert-tab:hover {
+    background-color: var(--border-dark);
+}
+.menu-icon{
+    border-radius: 100px;
+    background-color: var(--border-light);
+    display: flex;
+    padding: 3px 7px;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+.menu-tabs p{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;  
+    color: var(--border-dark);
+}
+
+.menu-tabs p:hover{
+    color: var(--text-light);
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    column-gap: 40px;
+    flex-wrap: wrap;
+}
+ 
