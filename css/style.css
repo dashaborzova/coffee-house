@@ -77,6 +77,7 @@ html {
     flex: 1 0 0;
     font-size: 16px;
     font-weight: 600;
+    transition: 0.3s ease-out;
 }
 .header-hero{
     height: 644px;
@@ -432,7 +433,13 @@ h2 {
 .address p{
     font-size: 16px;
     font-weight: 600;
-    line-height: 24px
+    line-height: 24px;
+    text-decoration: none;
+    color: var(--text-light);
+}
+.address a{
+    text-decoration: none;
+    color: var(--text-light);
 }
 a[href^="tel:"] {
     font-size: 16px;
@@ -502,7 +509,7 @@ a[href^="tel:"] {
     border: 1px solid var(--border-light);
   
 }
-.coffee-tab:hover,
+
 .tea-tab:hover,
 .dessert-tab:hover {
     background-color: var(--border-dark);
@@ -553,6 +560,14 @@ a[href^="tel:"] {
     flex-shrink: 0;
     border-radius: 40px;
 }
+.grid-img:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+/* .grid-preview img:hover{
+    transform: scale(1.1);
+    transition: 1s;
+} */
 .preview-description{
     display: flex;
     padding: 20px;
