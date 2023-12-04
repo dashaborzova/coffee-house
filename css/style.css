@@ -199,8 +199,6 @@ h2 {
 
 .slider-card{
     display: flex;
-    /* min-width: 480px;
-    max-width: 1162px; */
     width: 480px;
     flex-direction: column;
     align-items: center;
@@ -507,9 +505,16 @@ a[href^="tel:"] {
     align-items: center;
     gap: 8px;
     border: 1px solid var(--border-light);
-  
+    
+    
 }
-
+.coffee-tab{
+    background-color: var(--border-dark);
+    
+}
+.coffee-tab p{
+    color: var(--text-light) !important;
+}
 .tea-tab:hover,
 .dessert-tab:hover {
     background-color: var(--border-dark);
@@ -564,10 +569,7 @@ a[href^="tel:"] {
     transform: scale(1.1);
     transition: 1s;
 }
-/* .grid-preview img:hover{
-    transform: scale(1.1);
-    transition: 1s;
-} */
+
 .preview-description{
     display: flex;
     padding: 20px;
@@ -593,4 +595,7 @@ a[href^="tel:"] {
     justify-content: center;
     align-items: flex-start;
     gap: 12px;
+}
+.refresh-btn{
+    display: none;
 }

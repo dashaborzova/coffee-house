@@ -105,4 +105,32 @@
         gap: 100px;
         height: 100%;
     }
-}
+    .menu{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .menu-offer{
+        width: 100%;
+    }
+    .menu-title{
+        padding: 0;
+    }
+    .tablet-hide{
+        display: none;
+        animation: fade_out 0.5s linear;
+        animation-fill-mode: forwards;
+    }
+    .grid{
+        padding: 0 14px;
+    }
+    .refresh-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        border: 1px solid var(--border-dark);
+        border-radius: 100px;
+        animation: fade_in 0.5s; 
+    }
+}   
