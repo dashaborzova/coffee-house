@@ -77,7 +77,7 @@ html {
     flex: 1 0 0;
     font-size: 16px;
     font-weight: 600;
-    transition: 0.3s ease-out;
+    animation: fade_out 1s;
 }
 .header-hero{
     height: 644px;
